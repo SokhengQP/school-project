@@ -19,23 +19,14 @@ body > ::-webkit-scrollbar {
 body {
      font-family: "Roboto", Arial, sans-serif;
      font-weight: 500;
-
 }
 
-body::-webkit-scrollbar {
-     borer-radius: 18px;
-     height: 8px;
-}
 
-body::webkit-scrollbar-thumb {
-     background: blue;
-}
 
 body.light {
      /* Light */
      background-color: #d4a373;
      color: black;
-     
 }
 
 body.dark  {
@@ -70,16 +61,9 @@ body.dark  {
 
 .navbar-height {
      height: calc(100% - 74px);
-
 }
 
 .moveAside {
-     margin-left: 200px;
+     margin-left: 220px;
      
 }
-
-.tablis-move {
-     margin-left: 200px;
-}
-
-

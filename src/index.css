@@ -4,9 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body > ::-webkit-scrollbar {
-     width: 0;
-     height: 0;
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar {
+    width: 10px; /* width for vertical scrollbar */
+    height: 10px; /* height for horizontal scrollbar */
+}
+
+/* Scrollbar handle (thumb) */
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change color */
+    border-radius: 12px; /* Rounded edges */
+    border: 1px solid transparent; /* Inner padding */
 }
 
 * {
@@ -21,11 +31,9 @@ body {
      font-weight: 500;
 }
 
-
-
 body.light {
      /* Light */
-     background-color: #d4a373;
+     background-color: #fff;
      color: black;
 }
 
@@ -43,7 +51,7 @@ body.dark  {
 
 .bg-style {
      background-color: #80808090;
-     color: white;
+     
 }
 
 .bg-style:hover {
@@ -59,11 +67,48 @@ body.dark  {
      margin-left: 55px;
 }
 
+.video-subscriptions-sidebar, .text-latest {
+     margin-left: 220px;
+}
 .navbar-height {
      height: calc(100% - 74px);
 }
 
 .moveAside {
      margin-left: 220px;
+}
+
+#auto-playlist:hover > .play-hover-01, #ep-lists:hover > .play-hover-02 {
+     background-color: gray;
+     display: block;
+}
+
+.time-list:hover ~ i {
+     display: block;
+}
+
+
+.playlist-liked:hover > :nth-child(4)  {
+     display: flex;
+     color: white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.playlist-liked:hover {
+     filter: brightness(60%);
+}
+
+.playlist-watchlater:hover > :nth-child(4) {
+     display: flex;
+     color: white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.playlist-watchlater:hover {
+     filter: brightness(60%);
      
+}
+
+.downl:hover, .ver-menu:hover  {
+     background: gray;
 }

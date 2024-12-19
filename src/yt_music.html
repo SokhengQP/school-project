@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+     <link rel="icon shortcut" href="https://www.youtube.com/s/desktop/209a81c2/img/logos/favicon_48x48.png"/>
+     
+     <link rel="stylesheet" href="./output.css"/>
+     <title>Youtube-Musics</title>
+</head>
+<body>
+     
+     
+          <div class="navbar-music w-60 h-full fixed px-2 py-4">
+               
+               <div class="flex items-center">
+                    <div id="music-menu" class="rounded-[50%] w-10 h-10 flex items-center justify-center">
+                         <label for="music-menu" class="cursor-pointer"><i class="fa-solid fa-bars"></i></label>
+                    </div>
+               
+                    <div class="px-2">
+                         <!-- navbar music -->
+                         <img class="h-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/YT_Music.svg/1024px-YT_Music.svg.png" alt=""/>
+                    </div>
+               
+               </div>
+               
+               <div class="flex flex-col gap-1 mt-6">
+                    <!-- Home -->
+                    <a href="#" id="music-home" class="flex items-center px-3 rounded-xl py-2 hover:bg-gray-500">
+                         <i class="fa-solid fa-house mr-6"></i>
+                         <label for="music-home">Home</label>
+                    </a>
+                    
+                    <!-- Explore -->
+                    <a href="#" id="music-explore" class="flex items-center px-3 rounded-xl py-2 hover:bg-gray-500">
+                         <i class="fa-brands fa-internet-explorer mr-6"></i>
+                         <label for="music-explore">Explore</label>
+                    </a>
+                    
+                    <!-- Library -->
+                    <a href="#" id="home-library" class="flex items-center px-3 rounded-xl py-2 hover:bg-gray-500 mb-4">
+                         <i id="home-library" class="fa-solid fa-music mr-6"></i>
+                         <label for="home-library" >Library</label>
+                    </a>
+                    
+                    <hr/>
+               </div>
+               
+               <a href="#" id="music-playlist" class="flex items-center px-3 rounded-xl py-2 hover:bg-gray-500 mt-4">
+                    <i class="fa-solid fa-plus mr-6"></i>
+                    <label for="music-playlist">New playlist</label>
+               </a>
+               
+               <div id="auto-playlist" class="relative py-2 rounded-xl hover:bg-gray-500 mb-1 mt-4">
+                    <p class="px-3 py-1">Linked Music</p>
+                    <div class="px-3 flex items-center gap-2 py-1">
+                         <i class="fa-solid fa-thumbtack fa-sm"></i>
+                         <label for="auto-playlist" class="text-[12px]">Auto playlist</label>
+                    </div>
+                    
+                    <i class="play-hover-01 absolute hidden right-5 top-9 fa-solid fa-circle-play fa-xl"></i>
+                    
+               </div>
+               
+               <div id="ep-lists" class="relative py-2 rounded-xl hover:bg-gray-500 mb-1">
+                    <p class="px-3 py-1">Episodes for Later</p>
+                    <div class="px-3 flex items-center gap-2 py-1">
+                         <i class="fa-solid fa-thumbtack fa-sm"></i>
+                         <label for="ep-lists" class="text-[12px]">Auto playlist</label>
+                    </div>
+                    
+                    <i class="play-hover-02 absolute hidden right-5 top-9 fa-solid fa-circle-play fa-xl"></i>
+                    
+               </div>
+               
+          </div>
+          
+          <div class="flex flex-col w-[80vw] float-right">
+               <div class="flex justify-between items-center py-4 relative ">
+                    <input class="outline-none rounded-md w-[550px] h-[40px] text-black pl-14 bg-gray-300" type="text" placeholder="Search songs, albums, artists, podcasts"/>
+                    <i class="absolute left-4 top-9 text-black fa-solid fa-magnifying-glass fa-xl"></i>
+               
+                    <div class="mr-24 flex items-center gap-4">
+                         <i class=" fa-solid fa-tv"></i>
+                         <i class="fa-solid fa-user"></i>
+                    </div>
+               
+               
+               </div>
+               
+               
+               <div class="flex flex-row gap-2 mt-12">
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Relax</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Sleep</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Energize</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Sad</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Romance</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Feel good</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Workout</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Party</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Commune</button>
+                         <button class="text-[12px] rounded-md px-2 py-2 bg-gray-500">Focus</button>
+               </div>
+               
+               
+               <h1 class="mt-[60px] mb-4 text-3xl font-[700]">Music videos for you</h1>
+               <div class="overflow-x-auto flex flex-row gap-4 flex-shrink-0">
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 shadow-md shadow-gray-900 rounded-md" src="https://i.redd.it/why-is-this-style-of-cover-art-so-popular-among-phonk-v0-5oxy8bezfova1.jpg?width=640&format=pjpg&auto=webp&s=bf23e49151ec7bb3697096e886fd91fa4a05794d" alt=""/>
+                              <p>First day (feat. Mann Doss)</p>
+                              <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 shadow-md shadow-gray-900 rounded-md" src="https://neural.love/cdn/thumbnails/1ef333de-1f6a-69bc-a88c-5f5fa726efff/08998174-05df-5fae-8193-6cb5da97ee17.webp?Expires=1767225599&Signature=Hb9Y3DHyOsNmXf5Iwi5FtFeRrs5OXN5XIGOOQcrR-2UEm5b2OBg51H6GR8jr2a4cXZUSxnAxME-ls63ZcqDzD4EtO1Z2HLJ8PCt139jGxZJAWrKTKGTHHwHCc~dcyUoL0FHar0fMJPjHit2gprSL2CRCsQFg39bNMjm6bIpaT0dZy4PhVnlBXEt5IxckbRgesAaZHsW0BUZpy6VDmYoPpO3qC8dXO9wU9H6AhqMiYf9NaYPQoPEKEXFAhPrslIxRP2coHNJz8sTanEtOfutXv~21CB8-FSSnRIX~ediJ0JEZNFtrGNxrXPjq~bC3H-PbS5xJfXEopZf6ocVNpqCtQw__&Key-Pair-Id=K2RFTOXRBNSROX" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 shadow-md shadow-gray-900 rounded-md" src="https://neural.love/cdn/thumbnails/1eee139a-6e59-6fdc-93ff-0137ad434bfc/5bad8420-adf3-5135-8d25-f10ba0c39527.webp?Expires=1767225599&Signature=aCdtpH~BuKCThxeXGL6RDXXl1Q5RFHcj7FzGqvWwqpr98Tcwe9r4ducF0lvwrXTUX~zV1zUqiENRWnqSWrdHW1TjRgYyll2VpqkMvf-QuLf8g7iYGlSLsGLewpmhu5V2m2d7JZs9phXyw1mrMVmO2btthSwaWhIqo5Ec~erVUHWMV4LD7J1oS5Ib0VZZqs7IVgkcK86IgHfkBzGMB6ylrZazE7DvseP4McCPv3VFz39A37J9KxLjBLqePJuCAn2i4xXV7znxn-xLNWK~ggrwrM-s~av~PBHYUNDYDwZgrQPzW7KFsVIVpBULvbctbPloonpS16hGea9yI92BLrX0EA__&Key-Pair-Id=K2RFTOXRBNSROX" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 object-contain shadow-md shadow-gray-900 rounded-md" src="https://source.boomplaymusic.com/group10/M00/03/27/ac4e63730ef9471b8d6723842ed020dd_320_320.jpg" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 object-cover shadow-md shadow-gray-900 rounded-md" src="https://source.boomplaymusic.com/group10/M00/05/23/2832d5ba6ebe4a7080a180cf76b0711d_320_320.jpg" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56 flex flex-col flex-shrink-0">
+                         <img class="mb-4 object-contain shadow-md shadow-gray-900 rounded-md" src="https://i.redd.it/why-is-this-style-of-cover-art-so-popular-among-phonk-v0-5oxy8bezfova1.jpg?width=640&format=pjpg&auto=webp&s=bf23e49151ec7bb3697096e886fd91fa4a05794d" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    <div class="w-56  flex flex-col flex-shrink-0">
+                         <img class="object-contain mb-4 shadow-md shadow-gray-900 rounded-md" src="https://preview.redd.it/why-is-this-style-of-cover-art-so-popular-among-phonk-v0-gk4koaezfova1.jpg?width=600&format=pjpg&auto=webp&s=fdb0770d95e8dfd4fede682584ef4482d73438f5" alt=""/>
+                         <p>First day (feat. Mann Doss)</p>
+                         <p>M-Fatt <supscript>.</supscript> style phonk </p>
+                    </div>
+                    
+                    
+               </div>
+               
+               
+               
+          </div>
+               
+               
+               
+          
+<script src="app.js"></script>
+</body>
+</html>

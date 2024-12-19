@@ -4,11 +4,13 @@ content: ["./src/**/*.{html,js}"],
   theme: {  
     screens: {
       
-      "sm": { 'max': '320px'},
+      "sm": { 'max': '430px'},
       "md": { 'max': '768px' },
       "xl": { 'max': '1024px' },
       
     },
+    
+    
     extend: {},
   },
   plugins: [],
